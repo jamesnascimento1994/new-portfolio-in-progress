@@ -2,15 +2,17 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css';
-import Footer from '../components/footer';
-import Header from '../components/Navbar';
+import Navbar from '../components/Navbar';
+import Header from '../components/Header';
 import About from '../components/About';
 import Skills from '../components/Skills';
 import Projects from '../components/Projects';
+import Footer from '../components/footer';
 
 const Home: NextPage = () => {
   return (
     <div>
+      <Navbar />
       <Header />
       <About />
       <Skills />
